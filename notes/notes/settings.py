@@ -35,6 +35,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = "/media/"
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -43,6 +46,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "noteapp",
+    "users",
 ]
 
 MIDDLEWARE = [
